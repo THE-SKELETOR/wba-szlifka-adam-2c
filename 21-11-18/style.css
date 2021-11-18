@@ -15,6 +15,7 @@
     flex-basis: auto;
     align-self: auto;
     order: 0;
+    padding: 100px;
   }
   
   .flex-items:nth-child(2) {
