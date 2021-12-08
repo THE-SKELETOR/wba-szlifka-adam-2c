@@ -1,3 +1,8 @@
+body {
+    background-image: url("Cosmic-gradient-14.jpg");
+    background-size: 100%, 100%;
+}
+
 .page {
     flex-wrap: nowrap;
     flex-direction: row;
@@ -6,8 +11,42 @@
     align-items: center;
 }
 
+.textsquare {
+    display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 25%;
+  margin-top: 30vh;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px violet;
+  width: 50%;
+  height: 30%;
+}
+
 .title {
+    font-size: 2rem;
+    display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: left;
+  order: 0;
+  padding: 2rem;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS';
+}
+.lorem {
+
     font-size: 1rem;
+    display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+  padding: 0rem 2rem 2rem 2rem;
+  font-family: 'Trebuchet MS';
 }
 .topbar {
   display: flex;
@@ -16,11 +55,13 @@
   justify-content: center;
   align-items: stretch;
   align-content: normal;
+  color: white;
+  width: 100%;
+  background-color: rgba(38, 32, 62, 0.8);
 }
 .bar {
     flex: auto;
     font-size: 1.1rem;
-    background-color: rgba(38, 32, 62, 0.8);
     width: 80%;
     display: block;
     flex-grow: 0;
@@ -42,15 +83,19 @@
     display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: normal;
   width: 50%;
 }
+.abouttext {
+    padding: 3%;
+    font-family: 'Trebuchet MS';
+}
 .searchbar {
     display: flex;
     width: 25%;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     align-self: center;
 }
