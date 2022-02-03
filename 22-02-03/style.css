@@ -1,0 +1,23 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.gridbox {
+    background-color: rgba(76, 52, 185, 0.664);
+    min-height: 20vh;
+    padding: 1.5rem;
+}
+.gridbox:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+.gridbox:nth-child(7) {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
