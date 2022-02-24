@@ -1,8 +1,12 @@
+.page {
+    align-self: center;
+}
 .topbar {
     height: 160px;
-    
+    align-self: flex-end;
 }
 .background {
     background-image: url(../images/heroimage.svg);
+    width: 1440px;
     height: 919px;
 }
