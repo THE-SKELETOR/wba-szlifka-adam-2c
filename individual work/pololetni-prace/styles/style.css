@@ -60,7 +60,7 @@ body {
   width: 50%;
 }
 
-a:link, a:visited {
+a a:link, a a:visited {
   background-color: blue;
   color: darkgoldenrod;
   border: 3px solid darkslateblue;
@@ -73,7 +73,7 @@ a:link, a:visited {
   font-family: "Trebuchet MS";
 }
 
-a:hover, a:active {
+a a:hover, a a:active {
   background-color: darkslateblue;
   color: darkgoldenrod;
 }

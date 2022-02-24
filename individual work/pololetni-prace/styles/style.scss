@@ -35,22 +35,24 @@ body {
     justify-content: space-evenly;
     width: 50%;
   }
-  a:link, a:visited {
-    background-color: $lighter-color;
-    color: $light-color;
-    border: 3px solid $dark-color;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: $base-size;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: $best-font;
-  }
-  
-  a:hover, a:active {
-    background-color: $dark-color;
-    color: $light-color;
+  a{
+    a:link, a:visited {
+        background-color: $lighter-color;
+        color: $light-color;
+        border: 3px solid $dark-color;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: $base-size;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: $best-font;
+      }
+      
+      a:hover, a:active {
+        background-color: $dark-color;
+        color: $light-color;
+      }
   }
 
   .textsquare {
