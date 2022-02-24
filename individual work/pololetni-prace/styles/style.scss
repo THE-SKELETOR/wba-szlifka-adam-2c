@@ -6,54 +6,53 @@ $base-size: 1.2rem;
 $large-size: 2rem;
 
 body {
-    background-image: url("img/4NH.gif");
-    background-size: 20%;
+  background-image: url("img/4NH.gif");
+  background-size: 20%;
 }
 .page {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
 }
 .topbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: normal;
-    color: white;
-    width: 100%;
-    background-color: rgba(38, 32, 62, 0.8);
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: normal;
+  color: white;
+  width: 100%;
+  background-color: rgba(38, 32, 62, 0.8);
+}
 
-  .about {
-      display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    width: 50%;
-  }
-  a{
-    a:link, a:visited {
-        background-color: $lighter-color;
-        color: $light-color;
-        border: 3px solid $dark-color;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: $base-size;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-family: $best-font;
-      }
-      
-      a:hover, a:active {
-        background-color: $dark-color;
-        color: $light-color;
-      }
-  }
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+a:link, a:visited {
+  background-color: $lighter-color;
+  color: $light-color;
+  border: 3px solid $dark-color;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: $base-size;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $best-font;
+}
+    
+a:hover, a:active {
+  background-color: $dark-color;
+  color: $light-color;
+}
 
   .textsquare {
     display: flex;
@@ -83,8 +82,8 @@ body {
 }
 .lorem {
 
-    font-size: $base-size;
-    display: block;
+  font-size: $base-size;
+  display: block;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -96,4 +95,3 @@ body {
 .pad {
   padding: 1rem;
 }
-
