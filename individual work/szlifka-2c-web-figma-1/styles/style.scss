@@ -1,12 +1,71 @@
+$dark-color: #CBC1B1;
+$light-color: #E5E5E5;
+$darker-color: #7C7474;
+@mixin black-text {
+    color: black;
+}
 .page {
     align-self: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
 }
 .topbar {
     height: 160px;
-    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: stretch;
+    align-content: normal;
+    background-color: #CBC1B1;
+}
+.leftbar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+.rightbar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+.logo {
+    margin-right: 436px;
+}
+.about {
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 50vw;
+    }
+    display: none;
+}
+a {
+    @include black-text;
+    text-transform: uppercase;
+    padding: 18px;
+    font-size: 1.5rem;
+    :link, :visited {
+        background-color: $light-color;
+    }
+    :hover, :visited{
+        background-color: $darker-color;
+    }
 }
 .background {
-    background-image: url(../images/heroimage.svg);
-    width: 1440px;
-    height: 919px;
+    @media screen and (min-width: 1440px) {
+        background-image: url(../images/heroimage.svg);
+        width: 1440px;
+        height: 919px;
+    }
+    background: $light-color;
+    height: 100%;
+    width: 100%;
 }
