@@ -64,3 +64,51 @@
         margin-top: 92px;
     }
 }
+
+.gridding {
+    display: grid;
+    @media screen and (min-width: 1440px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        margin-left: 163px;
+        margin-right: 165px;
+        margin-top: 104px;
+    }
+}
+
+.gridbox {
+    text-align: left;
+}
+
+.island-subtitle {
+    text-align: center;
+    @media screen and (min-width: 1440px) {
+        @include large-underimage-text;
+    }
+    @include large-underimage-text-small;
+}
+.island-lorem {
+    @media screen and (min-width: 1440px) {
+        padding-left: 18px;
+        padding-top: 22px;
+        padding-right: 62px;
+        @include underimage-text;
+    }
+    @include underimage-text-small;
+}
+
+.button-two
+{
+    text-align: center;
+    @media screen and (min-width: 1440px) {
+        @include button-plain-text;
+        background-color: $darker-color;
+        margin-left: 630px;
+        margin-right: 630px;
+        margin-top: 28px;
+        padding-top: 18.5px;
+        padding-bottom: 18.5px;
+    }
+    @include button-plain-text-small; 
+}

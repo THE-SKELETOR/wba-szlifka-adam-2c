@@ -104,6 +104,9 @@ a {
 
 body {
   background-color: #E5E5E5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .page {
@@ -124,6 +127,22 @@ body {
   .bottombar {
     top: 1950px;
     width: 1440px;
+  }
+}
+
+.bottomtext {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .bottomtext {
+    width: 280px;
+    margin-top: 60px;
+    margin-left: 580px;
   }
 }
 
@@ -233,6 +252,89 @@ body {
     font-weight: 700;
     font-size: 36px;
     margin-top: 92px;
+  }
+}
+
+.gridding {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 1440px) {
+  .gridding {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 163px;
+    margin-right: 165px;
+    margin-top: 104px;
+  }
+}
+
+.gridbox {
+  text-align: left;
+}
+
+.island-subtitle {
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .island-subtitle {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.island-lorem {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@media screen and (min-width: 1440px) {
+  .island-lorem {
+    padding-left: 18px;
+    padding-top: 22px;
+    padding-right: 62px;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.button-two {
+  text-align: center;
+  color: black;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 1440px) {
+  .button-two {
+    color: #F8F7EC;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #7C7474;
+    margin-left: 630px;
+    margin-right: 630px;
+    margin-top: 28px;
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
