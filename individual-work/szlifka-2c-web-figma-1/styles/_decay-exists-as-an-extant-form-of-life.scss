@@ -1,0 +1,66 @@
+.background {
+    @media screen and (min-width: 1440px) {
+        background-image: url(../images/heroimage.svg);
+        width: 1440px;
+        height: 919px;
+    }
+    background: $light-color;
+    height: 100%;
+    width: 100%;
+}
+
+.textsquare {
+    background: $darker-color;
+    position: absolute;
+    @media screen and (min-width: 1440px) {
+        width: 650px;
+        height: 350px;
+        left: 760px;
+        top: 692px;
+        background-color: rgba($color: $darker-color, $alpha: 0.3);;
+    }
+    width: 310px;
+    height: 200px;
+}
+
+.title {
+    text-align: center;
+    @media screen and (min-width: 1440px) {
+        @include large-plain-text;
+        padding-top: 6px;
+        padding-bottom: 10px;
+    }
+    @include large-plain-text-small;
+}
+
+.lorem {
+    text-align: left;
+    @media screen and (min-width: 1440px) {
+        @include plain-text;
+        padding-left: 38px;
+        padding-right: 6px;
+    }
+    @include plain-text-small;
+}
+
+.button {
+    text-align: center;
+    @media screen and (min-width: 1440px) {
+        @include button-plain-text;
+        background-color: $darker-color;
+        margin-left: 239px;
+        margin-right: 239px;
+        margin-top: 28px;
+        padding-top: 18.5px;
+        padding-bottom: 18.5px;
+    }
+    @include button-plain-text-small;
+}
+
+.title-two {
+    text-align: center;
+    @media screen and (min-width: 1440px) {
+        @include large-text-section-two;
+        margin-top: 92px;
+    }
+}

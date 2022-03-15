@@ -1,0 +1,54 @@
+.topbar {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: stretch;
+    align-content: normal;
+    background-color: #CBC1B1;
+}
+.leftbar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+.rightbar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+}
+.logo {
+    margin-left: 163px;
+}
+.about {
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 50vw;
+    }
+    display: none;
+}
+
+.borgor {
+    @media screen and (min-width: 1440px) {
+        display: none;
+    }
+    margin-right: 40px;
+}
+
+a {
+    @include bold-text;
+    text-transform: uppercase;
+    padding: 18px;
+}
+.current-button {
+    background-color: adjust-color($darker-color, $alpha: -0.7);
+    text-decoration: none;
+}

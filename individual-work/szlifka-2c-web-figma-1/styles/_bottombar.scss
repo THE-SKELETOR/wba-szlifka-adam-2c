@@ -1,0 +1,9 @@
+.bottombar {
+    position: absolute;
+    height: 150px;
+    background-color: $dark-color;
+    @media screen and (min-width: 1440px) {
+        top: 1950px;
+        width: 1440px;
+    }
+}

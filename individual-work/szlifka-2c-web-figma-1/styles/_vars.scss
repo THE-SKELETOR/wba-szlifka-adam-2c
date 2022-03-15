@@ -1,0 +1,63 @@
+$dark-color: #CBC1B1;
+$light-color: #E5E5E5;
+$darker-color: #7C7474;
+$light-text-color: #F8F7EC;
+$not-trebuchet-but-good-font: 'Lato';
+$dark-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+@mixin bold-text {
+    color: black;
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 700;
+    font-size: 18px;
+}
+@mixin plain-text {
+    color: $light-text-color;
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 500;
+    font-size: 24px;
+    text-shadow: $dark-text-shadow;
+    line-height: 24px;
+}
+@mixin plain-text-small {
+    color: $light-text-color;
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 500;
+    font-size: 13px;
+}
+@mixin large-plain-text {
+    color: $light-text-color;
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 700;
+    font-size: 48px;
+    text-shadow: $dark-text-shadow;
+}
+@mixin large-plain-text-small {
+    color: $light-text-color;
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 700;
+    font-size: 20px;
+}
+@mixin button-plain-text {
+    color: $light-text-color;
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 600;
+    font-size: 18px;
+}
+@mixin button-plain-text-small {
+    color: black;
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 600;
+    font-size: 11px;
+}
+@mixin large-text-section-two {
+    font-family: $not-trebuchet-but-good-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+}
+@mixin large-text-section-two-small {
+    font-family: $not-trebuchet-but-good-font;
+    font-weight: 700;
+    font-size: 11px;
+}
