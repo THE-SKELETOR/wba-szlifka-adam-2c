@@ -89,9 +89,10 @@
 
 a {
   color: black;
+  font-family: 'Lato';
+  font-weight: 700, bold;
   text-transform: uppercase;
   padding: 18px;
-  font-size: 1.5rem;
 }
 
 a :link, a :visited {

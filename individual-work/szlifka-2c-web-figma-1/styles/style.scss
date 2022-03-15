@@ -1,8 +1,10 @@
 $dark-color: #CBC1B1;
 $light-color: #E5E5E5;
 $darker-color: #7C7474;
-@mixin black-text {
+@mixin bold-text {
     color: black;
+    font-family: 'Lato';
+    font-weight: 700, bold;
 }
 .page {
     align-self: center;
@@ -48,10 +50,9 @@ $darker-color: #7C7474;
     display: none;
 }
 a {
-    @include black-text;
+    @include bold-text;
     text-transform: uppercase;
     padding: 18px;
-    font-size: 1.5rem;
     :link, :visited {
         background-color: $light-color;
     }
