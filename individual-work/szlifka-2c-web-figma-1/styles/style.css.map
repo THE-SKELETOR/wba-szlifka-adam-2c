@@ -7,7 +7,9 @@
         "_topbar.scss",
         "_body.scss",
         "_bottombar.scss",
-        "_decay-exists-as-an-extant-form-of-life.scss"
+        "_decay-exists-as-an-extant-form-of-life.scss",
+        "_contacts.scss",
+        "_information.scss"
     ],
     "names": [],
     "file": "style.css"
