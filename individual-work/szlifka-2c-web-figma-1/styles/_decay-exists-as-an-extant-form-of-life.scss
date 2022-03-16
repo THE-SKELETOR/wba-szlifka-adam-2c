@@ -6,15 +6,15 @@
     }
     @media screen and (max-width: 1439px) {
         background: $light-color;
-        height: 100%;
+        height: 300px;
         width: 100%;
     }
 }
 
 .textsquare {
     background: $darker-color;
-    position: absolute;
     @media screen and (min-width: 1440px) {
+        position: absolute;
         width: 650px;
         height: 350px;
         left: 760px;
@@ -22,10 +22,9 @@
         background-color: rgba($color: $darker-color, $alpha: 0.3);;
     }
     @media screen and (max-width: 1439px) {
+        margin: 1px auto;
         width: 310px;
         height: 200px;
-        margin-left: 50%;
-        margin-right: 50%;
         margin-top: 50px;
     }
 }
@@ -71,6 +70,10 @@
     }
     @media screen and (max-width: 1439px) {
         @include button-plain-text-small;   
+        background-color: rgba($color: $light-text-color, $alpha: 0.3);
+        width: 120px;
+        height: 25px;
+        margin-left: 95px;
     }
 }
 
@@ -79,6 +82,9 @@
     @media screen and (min-width: 1440px) {
         @include large-text-section-two;
         margin-top: 92px;
+    }
+    @media screen and (max-width: 1439px) {
+        @include large-text-section-two-small
     }
 }
 
@@ -92,16 +98,38 @@
         margin-right: 165px;
         margin-top: 104px;
     }
+    @media screen and (max-width: 1439px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+    .img-box:nth-child(1) {
+        background-image: url(../images/madeira.svg);
+    }
+    .img-box:nth-child(2) {
+        background-image: url(../images/sardinie.svg);
+    }
+    .img-box:nth-child(3) {
+        background-image: url(../images/kypr.svg);
+    }
 }
 
 .gridbox {
     text-align: left;
 }
 
+.img-box {
+    @media screen and (min-width: 1440px) {
+        height: 350px;
+        width: 350px;
+    }   
+}
+
 .island-subtitle {
     text-align: center;
     @media screen and (min-width: 1440px) {
         @include large-underimage-text;
+        margin-top: 20px;
     }
     @media screen and (max-width: 1439px) {
         @include large-underimage-text-small;

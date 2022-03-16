@@ -177,18 +177,18 @@ body {
 @media screen and (max-width: 1439px) {
   .background {
     background: #E5E5E5;
-    height: 100%;
+    height: 300px;
     width: 100%;
   }
 }
 
 .textsquare {
   background: #7C7474;
-  position: absolute;
 }
 
 @media screen and (min-width: 1440px) {
   .textsquare {
+    position: absolute;
     width: 650px;
     height: 350px;
     left: 760px;
@@ -199,10 +199,9 @@ body {
 
 @media screen and (max-width: 1439px) {
   .textsquare {
+    margin: 1px auto;
     width: 310px;
     height: 200px;
-    margin-left: 50%;
-    margin-right: 50%;
     margin-top: 50px;
   }
 }
@@ -287,6 +286,10 @@ body {
     font-family: "Lato";
     font-weight: 600;
     font-size: 11px;
+    background-color: rgba(248, 247, 236, 0.3);
+    width: 120px;
+    height: 25px;
+    margin-left: 95px;
   }
 }
 
@@ -301,6 +304,14 @@ body {
     font-weight: 700;
     font-size: 36px;
     margin-top: 92px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .title-two {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 11px;
   }
 }
 
@@ -324,8 +335,36 @@ body {
   }
 }
 
+@media screen and (max-width: 1439px) {
+  .gridding {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.gridding .img-box:nth-child(1) {
+  background-image: url(../images/madeira.svg);
+}
+
+.gridding .img-box:nth-child(2) {
+  background-image: url(../images/sardinie.svg);
+}
+
+.gridding .img-box:nth-child(3) {
+  background-image: url(../images/kypr.svg);
+}
+
 .gridbox {
   text-align: left;
+}
+
+@media screen and (min-width: 1440px) {
+  .img-box {
+    height: 350px;
+    width: 350px;
+  }
 }
 
 .island-subtitle {
@@ -338,6 +377,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+    margin-top: 20px;
   }
 }
 
