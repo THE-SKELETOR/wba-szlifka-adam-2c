@@ -16,15 +16,22 @@
     justify-content: left;
 }
 .rightbar {
-    width: 50%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: right;
-    align-items: center;
+    width: 50%;
+    @media screen and (min-width: 1440px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: right;
+        align-items: center;
+    }
+    @media screen and (max-width: 1439px) {
+        justify-content: end;
+    }
 }
 .logo {
-    margin-left: 163px;
+    @media screen and (min-width: 1440px) {
+        margin-left: 163px;
+    }
 }
 .about {
     @media screen and (min-width: 1440px) {
@@ -40,7 +47,10 @@
     @media screen and (min-width: 1440px) {
         display: none;
     }
-    margin-right: 40px;
+    @media screen and (max-width: 1439px) {
+        margin-right: 40px;
+        margin-top: 28px;
+    }
 }
 
 a {

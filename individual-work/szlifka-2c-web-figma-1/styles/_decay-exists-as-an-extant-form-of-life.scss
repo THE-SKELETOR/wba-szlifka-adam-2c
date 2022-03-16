@@ -4,9 +4,11 @@
         width: 1440px;
         height: 919px;
     }
-    background: $light-color;
-    height: 100%;
-    width: 100%;
+    @media screen and (max-width: 1439px) {
+        background: $light-color;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .textsquare {
@@ -19,8 +21,13 @@
         top: 692px;
         background-color: rgba($color: $darker-color, $alpha: 0.3);;
     }
-    width: 310px;
-    height: 200px;
+    @media screen and (max-width: 1439px) {
+        width: 310px;
+        height: 200px;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-top: 50px;
+    }
 }
 
 .title {
@@ -30,7 +37,11 @@
         padding-top: 6px;
         padding-bottom: 10px;
     }
-    @include large-plain-text-small;
+    @media screen and (max-width: 1439px) {
+        @include large-plain-text-small;
+        padding-top: 4px;
+        padding-bottom: 6px;
+    }
 }
 
 .lorem {
@@ -40,7 +51,11 @@
         padding-left: 38px;
         padding-right: 6px;
     }
-    @include plain-text-small;
+    @media screen and (max-width: 1439px) {
+        @include plain-text-small;  
+        padding-left: 32px;
+        padding-right: 6px;
+    }
 }
 
 .button {
@@ -54,7 +69,9 @@
         padding-top: 18.5px;
         padding-bottom: 18.5px;
     }
-    @include button-plain-text-small;
+    @media screen and (max-width: 1439px) {
+        @include button-plain-text-small;   
+    }
 }
 
 .title-two {
@@ -86,7 +103,9 @@
     @media screen and (min-width: 1440px) {
         @include large-underimage-text;
     }
-    @include large-underimage-text-small;
+    @media screen and (max-width: 1439px) {
+        @include large-underimage-text-small;
+    }
 }
 .island-lorem {
     @media screen and (min-width: 1440px) {
@@ -95,7 +114,9 @@
         padding-right: 62px;
         @include underimage-text;
     }
-    @include underimage-text-small;
+    @media screen and (max-width: 1439px) {
+        @include underimage-text-small;
+    }
 }
 
 .button-two
@@ -110,5 +131,7 @@
         padding-top: 18.5px;
         padding-bottom: 18.5px;
     }
-    @include button-plain-text-small; 
+    @media screen and (max-width: 1439px) {
+        @include button-plain-text-small; 
+    }
 }
