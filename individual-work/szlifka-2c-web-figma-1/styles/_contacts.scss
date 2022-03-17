@@ -1,0 +1,33 @@
+.title-contact {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 65px;
+    @media screen and (min-width: 1440px) {
+        @include contacts-large-text;
+    }
+    @media screen and (max-width: 1439px) {
+        @include contacts-large-text-small;
+    }
+}
+
+.contacts-gridbox {
+    display: grid;
+    @media screen and (min-width: 1440px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 1439px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+.contacts-grid {
+    background-color: adjust-color($color: $darker-color, $alpha: -0.7 );
+    @media screen and (min-width: 1440px) {
+        
+    }
+    @media screen and (max-width: 1439px) {
+        
+    }
+}

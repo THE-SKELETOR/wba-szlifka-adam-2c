@@ -1,0 +1,104 @@
+.background-inf {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 1440px) {
+        height: 724px;
+    }
+    @media screen and (max-width: 1439px) {
+        height: 608px;
+    }
+}
+.gridbox-inf {
+    display: grid;
+    @media screen and (min-width: 1440px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 80%;
+        height: 50%;
+    }
+    @media screen and (max-width: 1439px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        width: 60%;
+        height: 80%;
+    }
+}
+
+.info-button {
+    display: flex;
+    @media screen and (min-width: 1440px) {
+        @include info-button-text;
+        align-content: center;
+    }
+    @media screen and (max-width: 1439px) {
+        @include info-button-text-small;
+        align-content: center;
+    }
+}
+
+.info-txt {
+    margin: auto;   
+}
+
+.covid {
+    @media screen and (min-width: 1440px) {
+        background-image: url(../images/coronavirus.svg);
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        
+    }
+    @media screen and (max-width: 1439px) {
+        background-image: url(../images/coronavirus-small.svg);
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.luggage {
+    @media screen and (min-width: 1440px) {
+        background-image: url(../images/luggage.svg);
+        margin: auto;
+        width: 100px;
+        height: 100px;
+    }
+    @media screen and (max-width: 1439px) {
+        background-image: url(../images/luggage-small.svg);
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.sale {
+    @media screen and (min-width: 1440px) {
+        background-image: url(../images/sale.svg);
+        margin: auto;
+        width: 108px;
+        height: 100px;
+    }
+    @media screen and (max-width: 1439px) {
+        background-image: url(../images/sale-small.svg);
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.document {
+    @media screen and (min-width: 1440px) {
+        background-image: url(../images/document.svg);
+        margin: auto;
+        width: 100px;
+        height: 100px;
+    }
+    @media screen and (max-width: 1439px) {
+        background-image: url(../images/document-small.svg);
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+}
