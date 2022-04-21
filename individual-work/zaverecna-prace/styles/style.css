@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'skeletor_stance';
+  src: url("font/skeletor_stance-webfont.woff2") format("woff2"), url("font/skeletor_stance-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.topbar {
+  font-family: "skeletor_stance";
+}
+
+.bottombar {
+  font-family: "skeletor_stance";
+}
+
+.body {
+  font-family: "skeletor_stance";
+}
+/*# sourceMappingURL=style.css.map */
