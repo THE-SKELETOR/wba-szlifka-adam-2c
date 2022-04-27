@@ -7,13 +7,68 @@
 
 .topbar {
   font-family: "skeletor_stance";
+  width: 100%;
+  height: 160px;
+  background-color: #1842A5;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.item-a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .bottombar {
   font-family: "skeletor_stance";
+  background-color: #BEA7E5;
+  width: 100%;
+  height: 130px;
 }
 
 .body {
   font-family: "skeletor_stance";
+  width: 100%;
+  height: 100%;
+  background-color: #BEA7E5;
+}
+
+.main {
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  background-color: #E5D4ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nyehbox {
+  margin-top: 10vh;
+  width: 50%;
+  height: 30vh;
+  background: #FACD87;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.nyeh {
+  padding-top: 5%;
+  font-size: 10rem;
 }
 /*# sourceMappingURL=style.css.map */

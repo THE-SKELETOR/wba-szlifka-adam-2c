@@ -1,3 +1,27 @@
 .body {
     font-family: $stylin;
+    width: 100%;
+    height: 100%;
+    background-color: $purple;
+}
+.main {
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+    background-color: $light-purple;
+    display: flex;
+    justify-content: center;
+}
+
+.nyehbox {
+    margin-top: 10vh;
+    width: 50%;
+    height: 30vh;
+    background: #FACD87;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.nyeh {
+    padding-top: 5%;
+    font-size: 10rem;
 }

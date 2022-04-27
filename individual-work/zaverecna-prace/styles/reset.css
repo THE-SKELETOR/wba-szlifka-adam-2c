@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  max-width: 1440px;
+  max-width: 100%;
   min-width: 390px;
   letter-spacing: 0.1em;
 }
