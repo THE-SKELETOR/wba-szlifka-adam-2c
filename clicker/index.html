@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>clicker</title>
+</head>
+<body>
+    <div id="game">
+        <div id="clickButton" onclick="Click()"></div>
+        <div id="clicks">
+            <div id="clickCounter"> # clicks</div>
+            <div id="clickPSCounter"> # clicks per second</div>
+            <div id="clickPOWCounter"> # click power</div>
+        </div>
+        <div id="shopBox">
+            <div class="shop" id="shop1">
+                grandma <br> 0.2 clicks per second <div id="cost1">costs 15 clicks</div> <div id="amount1"> you have #</div>
+            </div>
+            <div class="shop" id="shop2">
+                office worker <br> 1 clicks per second <div id="cost2">costs 120 clicks </div> <div id="amount2"> you have #</div> 
+            </div>
+            <div class="shop" id="shop3">
+                secretary <br> 5 clicks per second <div id="cost3">costs 800 clicks </div> <div id="amount3"> you have #</div>
+            </div>
+            <div class="shop" id="shop4">
+                IT support <br> 20 clicks per second <div id="cost4">costs 4000 clicks </div> <div id="amount4"> you have #</div>
+            </div>
+            <div class="shop" id="shop5">
+                gamer <br> 100 clicks per second <div id="cost5">costs 24000 clicks </div> <div id="amount5"> you have #</div>
+            </div>
+            <div class="shop" id="shop6">
+                hacker <br> 250 clicks per second <div id="cost6">costs 65000 clicks </div> <div id="amount6"> you have #</div>
+            </div>
+            <div class="shop" id="shop7">
+                autoclicker <br> 620 clicks per second <div id="cost7">costs 174000 clicks </div> <div id="amount7"> you have #</div>
+            </div>
+            <div class="shop" id="shop8">
+                russian bots <br> 1500 clicks per second <div id="cost8">costs 450000 clicks </div> <div id="amount8"> you have #</div>
+            </div>
+        </div>
+        <div id="saveButtons">
+            <div id="save" onclick="saveStuff()">
+                save
+            </div>
+            <div id="load" onclick="loadStuff()">
+                load
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
