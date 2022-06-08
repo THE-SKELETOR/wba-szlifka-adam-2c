@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'skeletor_stance';
+  src: url("font/skeletor_stance-webfont.woff2") format("woff2"), url("font/skeletor_stance-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.topbar {
+  font-family: "skeletor_stance";
+  width: 100%;
+  background-color: #1842A5;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 1439px) {
+  .topbar {
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .topbar {
+    height: 380px;
+  }
+}
+
+.topbar-background {
+  height: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .topbar-background {
+    background-image: url("../images/groovin.gif");
+    background-size: cover;
+  }
+}
+
+.page-button {
+  background-color: #FED18C;
+  width: 100px;
+  height: 50px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.col {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media screen and (max-width: 1439px) {
+  .item-d {
+    width: 144px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .item-d {
+    display: none;
+  }
+}
+
+.bottombar {
+  font-family: "skeletor_stance";
+  background-color: #BEA7E5;
+  width: 100%;
+  height: 130px;
+}
+
+a {
+  color: black;
+}
+
+a :hover {
+  color: #1842A5;
+}
+
+.body-abt {
+  font-family: "skeletor_stance";
+  width: 100%;
+  height: 100%;
+  background-color: #BEA7E5;
+}
+
+.main-abt {
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  background-color: #E5D4ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nyehbox {
+  margin-top: 10vh;
+  width: 30vw;
+  height: 15vw;
+  background: #FACD87;
+  border: 1px solid #000000;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nyeh {
+  padding-top: 0%;
+  font-size: 10vw;
+}
+
+.largetextbox {
+  margin-top: 10vh;
+  width: 80%;
+  background: #FACD87;
+  border: 1px solid #000000;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.titletext {
+  font-size: 4rem;
+  padding: 2%;
+}
+
+.largetext {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 3%;
+}
+
+.body-img {
+  font-family: "skeletor_stance";
+  width: 100%;
+  height: 100%;
+  background-color: #BEA7E5;
+}
+
+.main-img {
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  min-height: 80vh;
+  background-color: #E5D4ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image-block {
+  width: 24vw;
+  margin: 2vw;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.image-overlay {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.body-stf {
+  font-family: "skeletor_stance";
+  width: 100%;
+  height: 100%;
+  background-color: #BEA7E5;
+}
+
+.main-stf {
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  background-color: #E5D4ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-limiter {
+  width: 80%;
+  min-height: 80vh;
+}
+
+.button-box {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 30vw;
+  background: #FACD87;
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 2vw;
+  margin: 10vh auto;
+}
+
+.quotes-box {
+  margin-top: 10vh;
+  width: 80%;
+  background: #FACD87;
+  border: 1px solid #000000;
+  text-align: center;
+  margin-bottom: 10%;
+  font-size: 3vw;
+  margin: 10vh auto;
+}
+/*# sourceMappingURL=style.css.map */

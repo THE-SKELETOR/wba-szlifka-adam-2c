@@ -1,0 +1,28 @@
+.body-img {
+    font-family: $stylin;
+    width: 100%;
+    height: 100%;
+    background-color: $purple;
+}
+.main-img {
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+    min-height: 80vh;
+    background-color: $light-purple;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-block {
+    width: 24vw;
+    margin: 2vw;
+    transition: 0.2s;
+}
+
+.image-overlay {
+    transition: 1s;
+    transform: scale(1.5);
+}
