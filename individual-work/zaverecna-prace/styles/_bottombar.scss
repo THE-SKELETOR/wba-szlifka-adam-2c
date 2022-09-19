@@ -4,3 +4,9 @@
     width: 100%;
     height: 130px;
 }
+a {
+    color: black;
+    :hover {
+        color: $cobalt;
+    }
+}

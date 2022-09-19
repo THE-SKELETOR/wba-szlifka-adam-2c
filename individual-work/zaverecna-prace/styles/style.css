@@ -8,10 +8,41 @@
 .topbar {
   font-family: "skeletor_stance";
   width: 100%;
-  height: 160px;
   background-color: #1842A5;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 1439px) {
+  .topbar {
+    height: 160px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .topbar {
+    height: 380px;
+  }
+}
+
+.topbar-background {
+  height: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .topbar-background {
+    background-image: url("../images/groovin.gif");
+    background-size: cover;
+  }
+}
+
+.page-button {
+  background-color: #FED18C;
+  width: 100px;
+  height: 50px;
 }
 
 .container {
@@ -23,7 +54,7 @@
   height: 100%;
 }
 
-.item-a {
+.col {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -31,11 +62,32 @@
       justify-self: center;
 }
 
+@media screen and (max-width: 1439px) {
+  .item-d {
+    width: 144px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .item-d {
+    display: none;
+  }
+}
+
 .bottombar {
   font-family: "skeletor_stance";
   background-color: #BEA7E5;
   width: 100%;
   height: 130px;
+}
+
+a {
+  color: black;
+}
+
+a :hover {
+  color: #1842A5;
 }
 
 .body {
@@ -46,7 +98,7 @@
 }
 
 .main {
-  width: 95%;
+  width: 90%;
   margin-left: 5%;
   height: 100%;
   background-color: #E5D4ED;
@@ -72,8 +124,8 @@
 }
 
 .nyeh {
-  padding-top: 5%;
-  font-size: 10rem;
+  padding-top: 0%;
+  font-size: 10vw;
 }
 
 .largetextbox {
